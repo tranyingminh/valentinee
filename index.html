@@ -1,485 +1,60 @@
-﻿<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/res.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anoymous"></script>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <title>Blue Ridge Coffee</title>
-    </head>
-    <body>
-        
-        <section class="top ">
-            <div class="container">
-                <div class="row justify-content">
-                    <div class="logo">
-                        <img src="img/logo.png" alt="Coffee">
-                    </div>
-                    <div class="menu-bar">
-                        <span></span>
-                    </div>
-                    <div class="menu-items">
-                        <ul>
-                            <li class="menu-item"><i class="fas fa-home"></i><a href="#trangchu">Trang Chủ</a></li>
-                            <li class="menu-item"><i class="fas fa-address-card"></i><a href="#about">Về Chúng Tôi</a></li>
-                            <li class="menu-item"><i class="fas fa-bars"></i><a href="#menu">Thực Đơn</a></li>
-                            <li class="menu-item"><i class="fas fa-mug-hot"></i><a href="#intro">Pha Chế</a></li>
-                            <li class="menu-item"><i class="fas fa-user"></i><a href="#nhansu">Nhân Sự</a></li>
-                            <li class="menu-item"><i class="fas fa-comment"></i><a href="#phan-hoi">Phản Hồi</a></li>
-                            <li class="menu-item"><i class="fas fa-phone"></i><a href="#report">Liên hệ</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine Thí Ngọc</title>
+    <link rel="stylesheet" href="canvas.css" />
+    <link rel="stylesheet" href="present.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+    <div class="parent">
+      <canvas id="canvas"></canvas>
+      <section class="above-fold">
+        <div class="wrap-present">
+          <div class="present-box" id="present">
+            <div class="present">
+              <div class="img-wrap" id="present-image"></div>
             </div>
-        </section>
-        <section id="trangchu" class="big-img">
-            <div class="big-img-content"data-aos="zoom-in-up" data-aos-duration="2000">
-                <h1>BLUE RIDGE COFFEE</h1>
-                <p>Thưởng thức coffee, say mê lòng người</p>
-                <a href="#menu"><button class="big-img-content-btn btn">MENU</button></a>
+            <div class="side front"></div>
+            <div class="side back"></div>
+            <div class="side left"></div>
+            <div class="side right"></div>
+            <div class="side top">
+              <span class="to">
+                <span class="name" id="nametag"> </span>
+              </span>
             </div>
-        </section>
-        <section id="about" class="about section-pading">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title">
-                        <h2 data-aos="fade-down" data-aos-duration="2000" data-title="Câu Chuyện"><h2 data-aos="fade-up" data-aos-duration="2000">Về Chúng Tôi</h2></h2>
-                    </div>
-                </div>
-                <div class="row">
-                        <div class="about-item"data-aos="fade-right" data-aos-duration="3000" >
-                            <h2 >Chào mừng các bạn đến với Quán Coffee Blue Ridge </h2>
-                            <p >Ở Blue Ridge Coffee, chúng tôi chọn ra những hạt cà phê đến từ vùng nguyên liệu tốt nhất, áp dụng công nghệ rang xay hiện đại và chăm chút mọi thứ bằng niềm đam mê cùng một trái tim nhiệt thành với cà phê, chỉ cốt làm một điều duy nhất: Thấu hiểu để tạo ra những hương vị cà phê tuyệt vời đáp ứng gu vị và nhu cầu của từng khách hàng.</p>
+            <div class="side bottom"></div>
+          </div>
+        </div>
+        <p class="info-text">Click to Open</p>
+      </section>
 
-                                <p >Đến với Blue Ridge Coffee, bạn còn được tự tay pha trộn cà phê theo gu vị cá nhân và thiết kế tem nhãn riêng theo sở thích và tích cách đặt biệt của bạn. Loại cà phê hảo hạng thơm lừng bạn mang về không phải chỉ là Blue Ridge Coffee, mà còn là Your Personalized Coffee – Cà phê do bạn tạo ra và chỉ dành riêng cho bạn.</p>
-                                <p>Mang đến những hạt cà phê chất lượng và đáp ứng gu vị riêng của mỗi người là sứ mệnh của chúng tôi.</p>
-                                
-                                <p >Nếu có thể, hãy kể cho chúng tôi câu chuyện của bạn, và chúng tôi sẽ mang đến trải nghiệm cà phê chỉ dành riêng cho bạn.</p>
-                                <p data-aos="fade-right" data-aos-duration="1500"><a href="#intro"><button class="btn">
-                                    XEM PHA CHẾ
-                                </button></a></p>
-                        </div>
-                        <div class="about-item"data-aos="fade-up" data-aos-duration="2500">
-                            <div class="about-item-img">
-                                <span>Hơn 5 năm kinh nghiệm</span>
-                                <img src="img/about.jpg" alt="About Us">
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <section id="menu" class="menu section-pading">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title">
-                        <h2 data-aos="fade-down" data-aos-duration="2000" data-title="Chọn Ngay, Mê Ngất Ngây"><h2 data-aos="fade-up" data-aos-duration="2000">Thực Đơn</h2></h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="menu-title"data-aos="fade-up" data-aos-duration="1500">
-                        <button class="menu-button active" data-title="#caphe">Cà Phê</button>
-                        <button class="menu-button" data-title="#tra">Trà</button>
-                        <button class="menu-button" data-title="#snacks">Snacks</button>
-                        <button class="menu-button" data-title="#banhngot">Bánh Ngọt</button>
-                    </div>
-                </div>
-                <div class="row justify-content"data-aos="fade-up" data-aos-duration="1500" >
-                    <div class="menu-item-content active" id="caphe">
-                        <div class="drink-items">
-                            <a href="./subweb/cafeden.html"><div class="drink-item">
-                                <img src="img/cafe/cfden.jpg" alt="Cà phê đen">
-                                <p>Cà Phê Đen</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>10.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/caphesua.html"><div class="drink-item">
-                                <img src="img/cafe/cfsua.jpg" alt="Cà phê sữa">
-                                <p>Cà Phê Sữa Đá</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>12.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/caphesuabot.html"><div class="drink-item">
-                                <img src="img/cafe/cfsuabot.jpg" alt="Cà phê sữa bọt">
-                                <p>Cà Phê Sữa Bọt </p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>12.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/cafesuatuoi.html"><div class="drink-item">
-                                <img src="img/cafe/cfsuatuoi.jpg" alt="Cà phê sữa tươi">
-                                <p>Cà Phê Sữa Tươi </p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>11.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/cappuchino.html"><div class="drink-item">
-                                <img src="img/cafe/capuchino.jpg" alt="Capuchino">
-                                <p>Cappuchino</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>30.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/latte.html"><div class="drink-item">
-                                <img src="img/cafe/latte.jpg" alt="Latte">
-                                <p>Latte</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>30.000 VND</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-item-content" id="tra">
-                        <div class="drink-items">
-                            <a href="./subweb/trasuathaixanh.html"><div class="drink-item">
-                                <img src="img/tea/trathaixanh.jpg" alt="Trà sữa thái xanh">
-                                <p>Trà Sữa Thái Xanh</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>15.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/trasuathaido.html"><div class="drink-item">
-                                <img src="img/tea/trathaido.jpg" alt="Trà sữa thái đỏ">
-                                <p>Trà Sữa Thái Đỏ</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>15.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/tradao.html"><div class="drink-item">
-                                <img src="img/tea/tradao.jpg" alt="Trà đào">
-                                <p>Trà Đào</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>12.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/trachanh.html"><div class="drink-item">
-                                <img src="img/tea/trachanh.jpg" alt="Trà chanh">
-                                <p>Trà Chanh</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>10.000 VND</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-item-content" id="snacks">
-                        <a href="./subweb/laystunhien.html"><div class="drink-items">
-                            <div class="drink-item">
-                                <img src="img/snacks/snack2.jpg" alt="Lays Khoai Tây Vị Tự Nhiên">
-                                <p>Lays Khoai Tây Vị Tự Nhiên</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>6.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/laystaobien.html"><div class="drink-item">
-                                <img src="img/snacks/snack1.jpg" alt="Lays Khoai Tây Vị Tảo Biển">
-                                <p>Lays Khoai Tây Vị Tảo Biển</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>6.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/laysbobittet.html"><div class="drink-item">
-                                <img src="img/snacks/snack3.jpg" alt="Lays Khoai Tây Vị Bò Bít Tết">
-                                <p>Lays Khoai Tây Vị Bò Bít Tết</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>7.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/layskemchuahanh.html"><div class="drink-item">
-                                <img src="img/snacks/snack4.jpg" alt="Lays Khoai Tây Vị Kem Chua Hành">
-                                <p>Lays Khoai Tây Vị Kem Chua Hành</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>8.000 VND</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-item-content" id="banhngot">
-                        <div class="drink-items">
-                            <a href="./subweb/banhsungbo.html"><div class="drink-item">
-                                <img src="img/banhngot/banh1.jpg" alt="Pure Butter Croissant">
-                                <p>Pure Butter Croissant</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>20.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/banhsungbosocola.html"><div class="drink-item">
-                                <img src="img/banhngot/banh2.jpg" alt="Butter Chocolate Croissant">
-                                <p>Butter Chocolate Croissant</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>20.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/cotta.html"><div class="drink-item">
-                                <img src="img/banhngot/banh3.png" alt="Passion Panna Cotta">
-                                <p>Passion Panna Cotta</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>38.000 VND</p>
-                            </div>
-                        </div>
-                        <div class="drink-items">
-                            <a href="./subweb/macha.html"><div class="drink-item">
-                                <img src="img/banhngot/banh4.png" alt="Matcha White Chocomouse">
-                                <p>Matcha White Chocomouse</p>
-                            </div></a>
-                            <div class="drink-price">
-                                <p>38.000 VND</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="intro" class="intro section-pading">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title">
-                        <h2 data-aos="fade-down" data-aos-duration="2000" data-title="Intro"><h2 data-aos="fade-up" data-aos-duration="2000">Pha Chế</h2></h2>
-                    </div>
-                </div>
-                    <div class="intro-item">
-                        <video controls muted data-aos="zoom-in" data-aos-duration="2000">
-                            <source src="./videos/Latte.mp4" type="video/mp4">
-                        </video>
-                    </div>
-            </div>
-        </section>
-        <section id="nhansu" class="nhansu section-pading">
-            <div class="container" >
-                <div class="row" >
-                    <div class="section-title">
-                        <h2 data-title="Nhân Sự">Nhân Viên</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="nhansu-items">
-                        <img src="img/phache/phache1.jpg" alt="">
-                        <div class="nhansu-items-text">
-                            <h2>Phạm Danh Tân</h2>
-                            <span>Nhân Viên Pha Chế</span>
-                        </div>
-                    </div>
-                    <div class="nhansu-items" >
-                        <img src="img/phache/phache2.jpg" alt="">
-                        <div class="nhansu-items-text">
-                            <h2>La Thị Nam</h2>
-                            <span>Quản Lý</span>
-                        </div>
-                    </div>
-                    <div class="nhansu-items">
-                        <img src="img/phache/phache3.jpg" alt="">
-                        <div class="nhansu-items-text">
-                            <h2>Lâm Hồng Phong</h2>
-                            <span>Phục Vụ</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="phan-hoi" class="phan-hoi section-pading">
-            <div class="container" >
-                <div class="row">
-                    <div class="section-title">
-                        <h2 data-title="Đánh Giá">Phản Hồi</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="phan-hoi-items">
-                        <div class="phan-hoi-item ">
-                            <div class="phan-hoi-item-content">
-                                <div class="phan-hoi-item-img-content-text">
-                                    <h2>Đức Bo</h2>
-                                    <span>Drink Specialist</span>
-                                </div>
-                                <div class="phan-hoi-item-img-content-img">
-                                    <img src="img/avatar/avatarbo.jpg">
-                                </div>
-                            </div>
-                            <p>Vị trí ở trung tâm, địa điểm cũng không khó tìm.
+      <div id="card">
+        <h4 class="title-card">💘Em bé Thí Ngọc💘</h4>
 
-                                Điều đặc biệt là bên trong quan rộng nhưng bên ngoài bảng hiệu lại nhỏ, đi taxi đôi lúc nhìn cũng hơi khó khăn :D
-                                Quán rộng, nhân viên đông phục vụ khá nhanh và nhiệt tình.
-                                Phía trên bán cf còn ở khu dưới mình thấy có bày biện các loại túi cf đóng gói nữa.
-                                Cảm thấy không gian đã ấm áp rồi gặp nhân viên đáng yêu như quán nữa thấy 1 ngày khởi đầu như vậy là tuyệt vời rồi.
-								Ấn tượng đầu tiên của quán cực kì tốt.</p>
-                            <div class="phan-hoi-item-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="phan-hoi-item">
-                            <div class="phan-hoi-item-content">
-                                <div class="phan-hoi-item-img-content-text">zz
-                                    <h2>Ẩn Danh</h2>
-                                    <span>Drink Specialist</span>
-                                </div>
-                                <div class="phan-hoi-item-img-content-img">
-                                    <img src="img/avatar/avatar3.jpg">
-                                </div>
-                            </div>
-                            <p>Không gian quán thế nào nhỉ, có lung linh không?
+        <img
+          src="cuoiia.jpg"
+          class="honey"
+        />
 
-                                Ấn tượng đầu tiên là quán cf khá rộng lớn mà cái bảng hiệu thì nhỏ chút xíu.
-                                
-                                Bước vô trong thì không gian ấm áp, vô cùng thoáng, bàn ghế gỗ xinh xắn, quán trang trí đơn giản nhẹ nhàng bằng những bảng đen ghi những món quán bán, những bóng đèn vàng nhỏ nhắn…
-                                Bánh thì không được thử, nói chung cũng hơi thất vọng 1 chút xíu nhưng mà cũng ổn không đến nỗi tệ.</p>
-                            <div class="phan-hoi-item-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="phan-hoi-item">
-                            <div class="phan-hoi-item-content">
-                                <div class="phan-hoi-item-img-content-text">
-                                    <h2>Lộc Lộc</h2>
-                                    <span>Drink Specialist</span>
-                                </div>
-                                <div class="phan-hoi-item-img-content-img">
-                                    <img src="img/avatar/avatarlinda.jpg">
-                                </div>
-                            </div>
-                            <p>Mình cũng chỉ mới uống được 2 loại ở đây nên cũng không có ý đánh giá quá khắt khe vì có thể hợp khẩu vị người này người kia, nhưng đối với bản thân thì tụi mình đánh giá quán này có không gian ấm áp, nhẹ nhàng, thoáng đãng, nước uống bình thường không đặc sắc.
-                                Phía trên bán cf còn ở khu dưới mình thấy có bày biện các loại túi cf đóng gói nữa, chắc là khu sản xuất chế biến cf của quán.
-								Nói chung là quán khá tốt, không có gì đáng để chê.
-                            </p>
-                            <div class="phan-hoi-item-star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="report" class="report section-pading">
-            <div class="container">
-                
-                    <div class="row">
-                        <div class="section-title">
-                            <h2 data-title="Contact">Liên hệ</h2>
-                        </div>
-                    </div>
-                    <div class="report-content">
-                        <div class="report-content-head row">
-                            <div class="report-content-icon">
-                                <p><i class="far fa-envelope"></i> trananhminh@gmail.com</p>
-                            </div>
-                            <div class="report-content-icon">
-                                <p><i class="fas fa-globe-americas"></i> blueridgecoffee.net</p>>
-                            </div>
-                            <div class="report-content-icon">
-                                <p><i class="fas fa-phone"></i> 0909199199</p>
-                            </div>
-                        </div>
-                        <div class="report-content-top row">
-                            <div class="report-content-item">
-                                <input type="text" name="user-name" id="user-name" placeholder="Họ tên">
-                            </div>
-
-                            <div class="report-content-item">
-                                <input type="text" name="user-mail" id="user-email" placeholder="Email">
-                            </div>
-
-                            <div class="report-content-item">
-                                <input type="text" name="user-address" id="user-address" placeholder="Địa chỉ">
-                            </div>
-
-                            <div class="report-content-item">
-                                <input type="text" name="user-title" id="user-title" placeholder="Tiêu đề">
-                            </div>
-                        </div>
-                        <div class="report-content-bottom">
-                            <textarea name="user-content" id="user-content" placeholder="Nội dung"></textarea>
-                            <button class="btn">Gửi</button>
-                        </div>
-                </div>
-            
-            </div>
-        </section>
-        <section class="chuchay justify-content">
-            <div class="container">
-                    <div class="chuchay-item">
-                        <marquee behavior="alternate" scrollamount="20" onmouseover="this.stop()" onmouseout="this.start()" >Thơm ngon đến giọt cuối cùng</marquee>
-                    </div>
-            </div>
-        </section>
-        <section id="footer" class="footer">
-            <div class="footer-bg">
-
-            </div>
-            <div class="container">
-                <div class="row justify-content">
-                    <div class="footer-item">
-                        <h2>Địa Chỉ</h2>
-                        <p>400/5/1 Phú Định<br>Thành Phố Hồ Chí Minh</p>
-                    </div>
-                    <div class="footer-item">
-                        <h2>Giờ Mở Cửa</h2>
-                        <p>8h30 - 22h30<br>Mỗi Ngày</p>
-                    </div>
-                    <div class="footer-item">
-                        <h2>Liên Hệ</h2>
-                        <p>Phone: 0909199199<br>Email: trananhminh1437@gmail.com</p>
-                        <div class="footer-social">
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-twitter-square"></i>
-                            <i class="fas fa-envelope"></i>
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="footer-copyright">
-                Copyright© 2021 Blue Ridge Coffee. All rights reserved.
-                </div>
-            </div>
-        </section>
-        <script src="js/script.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
+        <h4 class="content-card">
+          Chúc mừng ngày valentine iu em bé của anh, hẹn em eo lên sì gòn mình cùng nhao đi ăn ún cháy phố nèo. Yêu em bé Thí Ngọc mỏ hỗn
+        </h4>
+      </div>
+    </div>
+    <audio autoplay loop  id="playAudio">
+      <source src="nhacnen.mp3">
+    </audio>
+  </body>
+  <script src="config.js"></script>
+  <script src="canvas.js"></script>
+  <script src="present.js"></script>
+  <script>
+    
+  </script>
 </html>
